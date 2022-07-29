@@ -9,7 +9,9 @@
         <input type="text" #todo placeholder="Digite sua tarefa" matInput (keyup.enter)="addTodo(todo.value); todo.value=''">
       </mat-form-field>
       <mat-list role="list">
-       <app-todo-item></app-todo-item>
+        <div *ngFor="let item of todos">
+          <app-todo-item [todo]="item"></app-todo-item>
+        </div>
       </mat-list>      
     </mat-card-content>
   </mat-card>
