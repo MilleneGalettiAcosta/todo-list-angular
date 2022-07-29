@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
-import {MatInputModule} from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
 
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TodoListPageComponent } from './pages/todo-list-page/todo-list-page.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { TodoListPageComponent } from './pages/todo-list-page/todo-list-page.com
     TodoListComponent,
     HeaderComponent,
     FooterComponent,
-    TodoListPageComponent
+    TodoListPageComponent,
+    TodoItemComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { TodoListPageComponent } from './pages/todo-list-page/todo-list-page.com
     BrowserAnimationsModule,
     MatCardModule,
     MatInputModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
