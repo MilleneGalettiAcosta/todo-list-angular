@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -29,7 +30,8 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
