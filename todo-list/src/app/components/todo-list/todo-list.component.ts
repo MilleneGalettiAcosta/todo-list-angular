@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Itodo } from 'src/app/models/itodo';
+import { Todo } from 'src/app/models/itodo';
 
 @Component({
   selector: 'app-todo-list',
@@ -7,7 +7,7 @@ import { Itodo } from 'src/app/models/itodo';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  todos: Itodo[] = [];
+  todos: Todo[] = [];
   
   constructor() { }
 
@@ -15,6 +15,8 @@ export class TodoListComponent implements OnInit {
   }
 
   addTodo(title: string) {
-    console.log(title);
+    const id = this.todos.length +1;
+    this.todos.push(new Todo(id, title, false));
   }
+
 }
